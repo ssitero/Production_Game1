@@ -653,6 +653,7 @@ GameObject:
   - component: {fileID: 1159306377}
   - component: {fileID: 1159306376}
   - component: {fileID: 1159306375}
+  - component: {fileID: 1159306378}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -753,6 +754,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1159306373}
+--- !u!114 &1159306378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1159306373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19d296802f9ff74b99656b27d34d707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1180486792
 GameObject:
   m_ObjectHideFlags: 0
