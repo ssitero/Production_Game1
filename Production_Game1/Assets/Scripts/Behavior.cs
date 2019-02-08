@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class Behavior : MonoBehaviour
 {
-   // private RigidBody rb;
+
+    public GameObject bulletPrefab;
+    public Camera playerCamera;
 
     // Use this for initialization
     void Start()
     {
-       // rb = GetComponent<RigidBody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetMouseButtonDown(0)){
+            GameObject bulletObject = Instantiate(bulletPrefab);
+            bulletObject.transform.position = playerCamera.transform.position + playerCamera.transform.forward;
+        }
     }
-
+    /*
     void OnTriggerEnter(Collider other)
     {
 
@@ -28,4 +33,5 @@ public class Behavior : MonoBehaviour
         }
 
     }
+    */
 }
