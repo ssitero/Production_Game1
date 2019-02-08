@@ -169,7 +169,47 @@ ModelImporter:
     4300000: polySurface13
     7400000: Take 001
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head_Material
+    second: {fileID: 2100000, guid: ab97a1c6a8a944cd2be2821d9836b2dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TORSOOO
+    second: {fileID: 2100000, guid: 9cdfac7d2b85e459a889317db1a261db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface4
+    second: {fileID: 2100000, guid: 04e41af75a72f44b0a61a051893d3c26, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface5
+    second: {fileID: 2100000, guid: 8b8e5cb77d1ab4f93b43524b72939e96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 14cf8acace571428aa6153765d628046, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Head_Texture
+    second: {fileID: 2800000, guid: 25b05319b64ca4d27a0ca93739ee4b20, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: JeansTexture
+    second: {fileID: 2800000, guid: 92c485a1d281745ef85594ad92ad6a87, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TORSOO
+    second: {fileID: 2800000, guid: c1569a291a5094920a0b1fa82a8aedd8, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

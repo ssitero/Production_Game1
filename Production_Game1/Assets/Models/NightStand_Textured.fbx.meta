@@ -9,7 +9,12 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCube1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Nightstandtexture
+    second: {fileID: 2800000, guid: f6383cba591af4ed0bf499e17def52d7, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
