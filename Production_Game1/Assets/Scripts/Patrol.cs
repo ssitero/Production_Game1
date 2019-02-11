@@ -9,7 +9,7 @@ public class Patrol : MonoBehaviour {
     private float patrol_Radius = 30f;
     private float patrol_Timer = 6f;
     private float timer_Count;
-    /*here*/ Transform target;
+    /*here*/ public GameObject target;
     
 
     void Awake (){
@@ -19,18 +19,18 @@ public class Patrol : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         timer_Count = patrol_Timer;
-       /*here*/ target = player.instance.player.transform;
+       /*here*/ //target = Player.instance.Player.transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         Patroling();
         /*here*/
-        float distance = Vector3.Distance(target.position, transform.position);
+        float distance = Vector3.Distance(target.transform.position, transform.position);
 
         if (distance <= patrol_Radius){
 
-            navAgent.SetDestination(target.position);
+            navAgent.SetDestination(target.transform.position);
             /*here*/
         }
 	}
