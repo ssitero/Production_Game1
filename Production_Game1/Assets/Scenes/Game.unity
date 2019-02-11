@@ -641,7 +641,7 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 483944154}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.008033476
   m_Height: 0.033969827
@@ -1498,7 +1498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
@@ -2440,6 +2440,19 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1621348633350428, guid: bb69b92f0bce3478782bc5cb35f05799,
     type: 2}
   playerCamera: {fileID: 696067351}
+--- !u!136 &1963734811
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1963734807}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.01
+  m_Height: 0.04
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!1001 &1988516475
 Prefab:
   m_ObjectHideFlags: 0

@@ -23,7 +23,8 @@ public class Behavior : MonoBehaviour
             bulletObject.transform.forward = playerCamera.transform.forward;
         }
     }
-    /*
+  
+
     void OnTriggerEnter(Collider other)
     {
 
@@ -34,5 +35,5 @@ public class Behavior : MonoBehaviour
         }
 
     }
-    */
+
 }
