@@ -57,6 +57,18 @@ public class Patrol : MonoBehaviour {
         NavMesh.SamplePosition(randDir, out navHit, radius, layerMask);
 
         return navHit.position;
+
+
+    }
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+            other.gameObject.SetActive(false);
+        }
+
     }
 }
 

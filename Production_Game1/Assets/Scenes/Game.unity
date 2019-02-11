@@ -733,6 +733,7 @@ GameObject:
   - component: {fileID: 549207127}
   - component: {fileID: 549207126}
   - component: {fileID: 549207125}
+  - component: {fileID: 549207129}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -816,6 +817,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &549207129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549207124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b30a9cc55c0054600827b44c628f0a71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winMenuUI: {fileID: 2094797422}
 --- !u!1 &562821011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,7 +1145,7 @@ GameObject:
   - component: {fileID: 906258769}
   - component: {fileID: 906258768}
   m_Layer: 5
-  m_Name: Button
+  m_Name: WinQuit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,7 +1208,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 906258769}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 549207129}
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &906258769
@@ -1531,6 +1555,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!136 &1177361142
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1177361138}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.02
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.02, z: 0}
 --- !u!1 &1227395205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1758,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.7
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1729,7 +1766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.6
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1773,7 +1810,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
@@ -2294,6 +2331,10 @@ Prefab:
     - target: {fileID: 400000, guid: 55d97f2fda9654c4595a8041dcfbc1cc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 55d97f2fda9654c4595a8041dcfbc1cc, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55d97f2fda9654c4595a8041dcfbc1cc, type: 3}
@@ -3142,7 +3183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2094797423
 RectTransform:
   m_ObjectHideFlags: 0
