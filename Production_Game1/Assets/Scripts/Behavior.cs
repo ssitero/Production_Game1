@@ -32,6 +32,7 @@ public class Behavior : MonoBehaviour
         {
 
             other.gameObject.SetActive(false);
+            WinMenu.GameIsWon = true;
         }
 
     }

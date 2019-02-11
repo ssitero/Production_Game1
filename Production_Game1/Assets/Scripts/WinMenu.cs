@@ -13,14 +13,10 @@ public class WinMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Player"){
-
-            if (player.gameObject.SetActive(false)
-            
-            {
-                Win();
-            }
+        if (GameIsWon == true){
+            Win();
         }
+       
     }
 
 
