@@ -67,6 +67,7 @@ public class Patrol : MonoBehaviour {
         {
 
             other.gameObject.SetActive(false);
+            LoseMenu.GameIsLost = true;
         }
 
     }
