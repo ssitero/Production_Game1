@@ -2140,7 +2140,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
@@ -2468,7 +2468,7 @@ GameObject:
   - component: {fileID: 1514391554}
   - component: {fileID: 1514391553}
   m_Layer: 0
-  m_Name: Structures
+  m_Name: (Temp)Structures
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
