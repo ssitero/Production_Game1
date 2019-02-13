@@ -10,6 +10,7 @@ public class Patrol : MonoBehaviour {
     private float patrol_Timer = 6f;
     private float timer_Count;
     /*here*/ public GameObject target;
+    public GameObject bullet;
 
     
 
@@ -70,13 +71,19 @@ public class Patrol : MonoBehaviour {
             other.gameObject.SetActive(false);
             LoseMenu.GameIsLost = true;
         }
-        /*
+        //here
         if (other.gameObject.CompareTag("Bullet")){
 
-
+            Die();
         }
-*/
+
     }
 
+    public void Die(){
+        navAgent.isStopped = true;
+        Destroy(this);
+
+    }
+    //here
 }
 

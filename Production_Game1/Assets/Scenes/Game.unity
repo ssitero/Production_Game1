@@ -396,6 +396,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1621348633350428, guid: bb69b92f0bce3478782bc5cb35f05799, type: 2}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb69b92f0bce3478782bc5cb35f05799, type: 2}
   m_IsPrefabAsset: 0
@@ -1869,6 +1873,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1963734807}
+  bullet: {fileID: 1621348633350428, guid: bb69b92f0bce3478782bc5cb35f05799, type: 2}
 --- !u!195 &1177361140
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2101,7 +2106,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.7
+      value: -8.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 63b03e1400de04b2c9721202c4699ecc, type: 3}
       propertyPath: m_LocalRotation.x

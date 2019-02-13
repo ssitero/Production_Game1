@@ -11,6 +11,9 @@ public class BulletScript : MonoBehaviour
 
     private float lifeTimer;
     // Use this for initialization
+
+
+
     void Start()
     {
         lifeTimer = lifetime;
@@ -38,4 +41,5 @@ public class BulletScript : MonoBehaviour
         }
     }
     */
+   
 }
