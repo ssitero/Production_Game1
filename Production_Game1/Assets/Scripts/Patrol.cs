@@ -10,6 +10,7 @@ public class Patrol : MonoBehaviour {
     private float patrol_Timer = 6f;
     private float timer_Count;
     /*here*/ public GameObject target;
+
     
 
     void Awake (){
@@ -69,7 +70,13 @@ public class Patrol : MonoBehaviour {
             other.gameObject.SetActive(false);
             LoseMenu.GameIsLost = true;
         }
+        /*
+        if (other.gameObject.CompareTag("Bullet")){
 
+
+        }
+*/
     }
+
 }
 
